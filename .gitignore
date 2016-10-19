@@ -1,3 +1,11 @@
+.idea/workspace.xml
+.idea/django-start.iml
+.idea/modules.xml
+
+# ----------------------
+# github generated START
+# ----------------------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -87,3 +95,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# --------------------
+# github generated END
+# --------------------
