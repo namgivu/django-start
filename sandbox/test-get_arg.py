@@ -1,6 +1,7 @@
 #!/usr/bin/python
 '''
-test util from yihabapar project ref. https://github.com/namgivu/yihabapar
+command line syntax
+test-get_arg.py {arg01} {arg02}
 '''
 
 #region import yihabapar utility
@@ -10,10 +11,13 @@ sys.path.insert(0, UTIL_HOME)
 from util_init import *
 #endregion import yihabapar utility
 
-run_bash('echo yihabapar')
+allArgs = ['arg01', 'arg02']
 
-run_bash('{APP_HOME}/sandbox/test-get_arg.py {arg01} {arg02}'.format(
-  APP_HOME=APP_HOME,
-  arg01=122,
-  arg02='abb')
-)
+arg01=get_arg('arg01', allArgs=allArgs)
+arg02=get_arg('arg02', allArgs=allArgs)
+
+print '''
+sandbox/test-get_arg.py
+  arg01: {arg01}
+  arg02: {arg02}
+'''.format(arg01=arg01, arg02=arg02)
