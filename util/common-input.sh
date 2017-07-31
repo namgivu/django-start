@@ -7,5 +7,4 @@ c="$SCRIPT_HOME/.." ; c=$(cd "$c" && pwd) ; export CODE_HOME=$c
 PROJECT_NAME='mysite'
 PROJECT_HOME="$CODE_HOME/$PROJECT_NAME"
 
-APP_MYSITE=$PROJECT_NAME
 APP_POLL='polls'

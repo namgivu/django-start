@@ -14,5 +14,4 @@ cd $curd
 #conclusion
 echo "
 Project '$PROJECT_NAME' created at '$PROJECT_HOME'
-An app '$APP_MYSITE' also created at '$PROJECT_HOME/$APP_MYSITE'
 "
