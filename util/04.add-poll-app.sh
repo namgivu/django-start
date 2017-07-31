@@ -7,12 +7,9 @@ s=$BASH_SOURCE ; s=$(dirname "$s") ; s=$(cd "$s" && pwd) ; export SCRIPT_HOME=$s
 source "$SCRIPT_HOME/common-input.sh"
 
 #ref. https://docs.djangoproject.com/en/1.11/intro/tutorial01/#creating-a-project
-curd=`pwd` ; cd $CODE_HOME
-django-admin startproject "$PROJECT_NAME"
+curd=`pwd` ; cd $PROJECT_HOME
+python manage.py startapp $APP_POLL
 cd $curd
 
 #conclusion
-echo "
-Project '$PROJECT_NAME' created at '$PROJECT_HOME'
-An app '$APP_MYSITE' also created at '$PROJECT_HOME/$APP_MYSITE'
-"
+echo "App '$APP_POLL' created at '$PROJECT_HOME/$APP_POLL' "

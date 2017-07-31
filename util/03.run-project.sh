@@ -9,6 +9,6 @@ RUN_PORT=8000
 IP_FILTER=0
 
 #ref. https://docs.djangoproject.com/en/1.11/intro/tutorial01/#the-development-server
-curd=`pwd` ; cd $CODE_HOME/$APP_NAME
+curd=`pwd` ; cd $PROJECT_HOME
 python manage.py runserver $IP_FILTER:$RUN_PORT
 cd $curd
