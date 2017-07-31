@@ -1,1 +1,0 @@
-`External git repository` to be cloned and stored here as `git submodule`
