@@ -1,1 +1,2 @@
-Django
+django
+mysql-python #ref. https://stackoverflow.com/a/15312750/248616, https://stackoverflow.com/a/5178698/248616
