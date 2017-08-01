@@ -100,3 +100,7 @@ ENV/
 # --------------------
 # github generated END
 # --------------------
+
+##region app's ignore
+.idea/dataSources/*.xml
+##endregion app's ignore
