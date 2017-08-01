@@ -8,7 +8,7 @@ source "$SCRIPT_HOME/common-input.sh"
 
 #ref. https://docs.djangoproject.com/en/1.11/intro/tutorial01/#creating-a-project
 curd=`pwd` ; cd $PROJECT_HOME
-python manage.py startapp $APP_POLL
+python $PROJECT_MANAGE startapp $APP_POLL
 cd $curd
 
 #conclusion
