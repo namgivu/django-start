@@ -3,8 +3,10 @@
     <words>
       <w>backends</w>
       <w>letmein</w>
+      <w>makemigrations</w>
       <w>mysite</w>
       <w>sqlite</w>
+      <w>sqlmigrate</w>
     </words>
   </dictionary>
 </component>
