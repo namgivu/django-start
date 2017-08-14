@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Polls </title>
+  <title>Polls detail</title>
 </head>
 <body>
-  {{ question }}
+
+  <h1>{{ question.question_text }}</h1>
+
+  <ul>
+  {% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }}</li>
+  {% endfor %}
+  </ul>
+
 </body>
 </html>
