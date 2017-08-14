@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.shortcuts import render
+
 from django.http import HttpResponse
+from models import Question
 
 
 def index(request):
-  return HttpResponse('This is polls index.')
+    questions = Question.objects.order_by('-pub_date')[:5]
+    output = ', '.join([q.question_text for q in questions])
+    return HttpResponse(output)
 
 
 def detail(request, question_id):
