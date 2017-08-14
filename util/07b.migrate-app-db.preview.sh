@@ -5,11 +5,14 @@ s=$BASH_SOURCE ; s=$(dirname "$s") ; s=$(cd "$s" && pwd) ; export SCRIPT_HOME=$s
 
 #load input
 source "$SCRIPT_HOME/common-input.sh"
+MIGRATE_NUM=$1
+if [ -z "$MIGRATE_NUM" ]; then
+  MIGRATE_NUM='0001'
+fi
 
 
 #print sql command
 echo ; echo -e "${CM}mysql-run preview @ migration${EC}"
-MIGRATE_NUM='0001'
 python $PROJECT_MANAGE sqlmigrate $APP_POLL $MIGRATE_NUM
 
 #run health check
